@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <script>
+            document.oncontextmenu = function(){return false}
+    </script>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widht-device-width,user-scalable=no,initial-scale=1,maximun-scale=1,minimun-scale=1">
+        <title>Resgistrarse</title>
+        <link rel="stylesheet" type="text/css"  href="css/login.css">
+    </head>
+    <body>
+        <form action="/php/registroConexion.php" class="formulario" id='formulario' method="POST"> 
+            
+            <h1 class="Formulario__Titulo">Registro</h1>
+            
+            <input type="text" class="formulario__input"  name='nombre'>
+            <label for="nombre" class="formulario__label">Nombre/s</label>
+            
+            <input type="text" class="formulario__input"  name='apellido'>
+            <label for="apellido" class="formulario__label">Apellido/s</label>
+            
+            <input type="text" class="formulario__input"  name='telefono'>
+            <label for="telefono" class="formulario__label">Numero de telefono</label>
+            
+            <input type="text" class="formulario__input" name='correo'>
+            <label for="correo" class="formulario__label">Correo</label>
+           
+            <input type="password" class="formulario__input Contra" name='contra'>
+            <label for="contra" class="formulario__label">Contraseña</label> 
+            
+            <input type="password" class="formulario__input Contra" name='recontra'>
+            <label for="recontra" class="formulario__label">Repetir Contraseña</label> 
+            
+            <input type="submit" class="formulario__submit"  >
+            <label for=""class="formulario__label__botones1">Completar Registro</label> 
+            
+            <input type="submit"  class="formulario__submit" href="index.html">
+            <label for=""class="formulario__label__botones2">Cancelar</label> 
+            <a href="Login.html" scr="validar(nombre, apellido, correo, contra, recontra)" >Enviar</a>
+            <a href="index.html">Cancelar</a>
+        
+        </form>
+        
+        <script src="Scripts/login.js" ></script>
+        <script src="Scripts/validarContra.js" ></script>
+        <script src="php/registroConexion.php"></script>
+        <php incluede "db.php"></php>
+
+    </body>
+</html>

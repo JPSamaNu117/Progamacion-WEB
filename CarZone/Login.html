@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+            document.oncontextmenu = function(){return false}
+    </script>
+    <head>
+        <meta charset="utf-8">
+        <title>LOGIN</title>
+        <link rel="stylesheet" type="text/css"  href="css/login.css">
+    </head>
+    <body>
+        <div id="vent" class="ventana">
+            <label for="" class="emergente"> Recupera tu contraseña con tu correo</label>
+            <p>              
+            </p>
+            <input type="text" class="formulario__input">
+            <label for="" class="formulario__label">Correo</label>
+            <input type="submit" class="formulario__submit" onclick="javascript:cerrar()">
+            <label for=""class="formulario__label__botones1_3" >Enviar</label> 
+            <a href="javascript:cerrar()"> cerrar(x) </a>
+            
+            <script>
+                
+                function abrir(){
+                    document.getElementById("vent").style.display="block";
+                }
+                function cerrar(){
+                    document.getElementById("vent").style.display="none";
+                }
+                
+            </script>
+            
+        </div>
+        
+        <form action="" class="formulario"> 
+            <img src="img/usuario.png" width="150px" height="150px">
+            <h1 class="Formulario__Titulo">LOGIN</h1>
+            
+            
+            <input type="text" class="formulario__input">
+            <label for="" class="formulario__label">Correo</label>
+           
+            <input type="password" class="formulario__input">
+            <label for=""class="formulario__label">Contraseña</label> 
+            
+            <input type="submit" class="formulario__submit" href="index.html">
+            <label for=""class="formulario__label__botones1_2" >Iniciar Sesion</label> 
+            <input type="submit"  class="formulario__submit" href="index.html">
+            <label for=""class="formulario__label__botones2" >Cancelar</label> 
+            
+            <p></p>
+            <a href="javascript:abrir()">Olvidaste tu contraseña ?</a><br>
+            <a href="Registro.html">No tienes cuenta?</a><br>
+            <a href="index.html">Back</a>
+            
+            
+        
+        </form>
+        
+        
+        <script src="Scripts/login.js"></script>
+    
+    </body>
+</html>
